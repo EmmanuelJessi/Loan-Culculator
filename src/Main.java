@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         String applicantName;
         String dateOfBirth;
+        String expiryDate;
         int principalAmount;
         int loanRent;
         double loanRepaymentTime;
@@ -21,8 +22,12 @@ public class Main {
         applicantName = Scanner.nextLine();
 
         // applicant date of birth
-        System.out.print("Enter applicant's Date of Birth: ");
+        ;System.out.print("Enter applicant's Date of Birth: ");
         dateOfBirth = Scanner.nextLine();
+
+        // expiryDate
+        System.out.print("Enter loan's expiryDate: ");
+        expiryDate = Scanner.nextLine();
 
         // principal Amount
         System.out.print("Enter principal amount: ");
@@ -43,6 +48,7 @@ public class Main {
         System.out.println("***** APPLICANT DETAILS ******");
         System.out.println("applicant Name: " + applicantName );
         System.out.println("applicant Date of Birth: " + dateOfBirth);
+        System.out.println("applicant loan expiryDate: " + dateOfBirth);
         System.out.println("applicant Principal Amount " + principalAmount);
         System.out.println("applicant loan rent " + loanRent);
         System.out.println("applicant loanRepayment Time " + loanRepaymentTime + " years");
